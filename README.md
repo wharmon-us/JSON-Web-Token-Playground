@@ -2,7 +2,7 @@
 
 At this time, there is no secure authentication involved. The current state of things is to just provide JWTs for a user.
 
-## A simple method to generate some random hex for the env secrets used to generate tokens:
+## How to generate some random hex for the env secrets:
 
 
 $ node
