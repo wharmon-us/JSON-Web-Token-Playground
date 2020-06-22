@@ -1,0 +1,29 @@
+GET http://localhost:3001/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxleCIsImlhdCI6MTU5Mjg1NjA1OSwiZXhwIjoxNTkyODU2MDc0fQ.E7G4Mx6ykAbnG3ZpgH8Pl5Mb6bXSAU9mMqVn4ZzGUZA
+
+###
+
+POST http://localhost:4001/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxleCIsImlhdCI6MTU5Mjg1NjM3OX0.-6iScUBxcsyzq9oa5V2FSTCtXqjgkWboKuY46lwv2sA"
+}
+
+###
+
+DELETE http://localhost:4001/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxleCIsImlhdCI6MTU5Mjg1NjM3OX0.-6iScUBxcsyzq9oa5V2FSTCtXqjgkWboKuY46lwv2sA"
+}
+
+###
+
+POST http://localhost:4001/login
+Content-Type: application/json
+
+{
+    "username": "Alex"
+}
