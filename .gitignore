@@ -1,0 +1,2 @@
+# Exclude node modules from git repo
+./node_modules
